@@ -1,0 +1,15 @@
+A generalization of the IMO 2011 windmill problem to three dimensions:
+Consider a set S of points in 3D, no four of which are coplanar. A 3D windmill is the following process: A plane, containing a ray Q which originates at some point q in S, starts 
+rotating about Q (Q defines the direction of rotation by the right hand rule). If the rotating plane's next intersection with S is at point r, then the plane "pivots" to r: the plane now 
+starts rotating about a ray R, originating at r, that lies in the plane. The process continues indefinitely, with the pivoting always happening when the plane passes through a point in S.
+Prove that one can choose the initial point q and a line L such that a 3D windmill, starting at q, passes through each point in S infinitely often even if all the rotation-defining rays 
+are constrained to be parallel to L.  
+
+The solution rests on a reduction to the solution of the 2D windmill: 
+There exists a plane P* such that no three points in S have collinear projections in P* (which implies that the projections to P* are distinct points). Choose q to be the point dictated by 
+the 2D windmill solution to the problem in P*. Choose L to be the line passing through q and its projection in P*.  The plane for the 3D windmill's solution is determined by the line in 
+the 2D windmill's solution in P* and the line passing through the pivot point and its projection in P*. 
+Proving the existence of P*  proceeds from assuming the contrary: 
+Consider the infinitely many distinct planes that pass through some point p in 3D (p doesn't need to be a point of S). If each of them have three (or more) collinear projections of 
+the (finite number of) points in S, then at least one triplet of points in S has collinear projections in infinitely many distinct planes passing through p. This implies that the triplet is
+collinear, which implies that any fourth point in S will be coplanar with this triplet, which contradicts the hypothesis.  
