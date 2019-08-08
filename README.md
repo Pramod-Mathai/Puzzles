@@ -1,3 +1,3 @@
 # Puzzles
 
-Solving puzzles with python
+Puzzles; some solved with code.
